@@ -5,7 +5,8 @@ import Razorpay from 'razorpay'
 import { User } from './model/userschema.js';
 import cors from "cors"
 
-const port = 8120;
+dotenv.config();
+const port = process.env.PORT;
 export const instance = new Razorpay({
     key_id: "rzp_test_5a8w8amerefgtu",
     key_secret: "fyy3I4Slnx89pOyfkKBJjxaK",
